@@ -23,7 +23,7 @@ const NavBar = (props) => {
         `https://www.googleapis.com/books/v1/volumes?q=${search.replaceAll(
           " ",
           "+"
-        )}`
+        )}&key=AIzaSyBQ5Mz54R1f0fXo5Di_gR4AFxRAXu1m4hY`
       )
       .then((request) => {
         props.setBookLists(request.data.items);

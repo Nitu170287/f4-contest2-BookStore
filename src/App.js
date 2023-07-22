@@ -11,7 +11,9 @@ const App = () => {
 
   useEffect(() => {
     axios
-      .get("https://www.googleapis.com/books/v1/volumes?q=harry+potter")
+      .get(
+        "https://www.googleapis.com/books/v1/volumes?q=harry+potter&key=AIzaSyBQ5Mz54R1f0fXo5Di_gR4AFxRAXu1m4hY"
+      )
       .then((request) => {
         setBookLists((prevItem) => prevItem.concat(request.data.items));
         setPreviewList(request.data.items.slice(0, 3));
@@ -22,7 +24,9 @@ const App = () => {
       });
 
     axios
-      .get("https://www.googleapis.com/books/v1/volumes?q=Sherlock+Holmes")
+      .get(
+        "https://www.googleapis.com/books/v1/volumes?q=Sherlock+Holmes&key=AIzaSyBQ5Mz54R1f0fXo5Di_gR4AFxRAXu1m4hY"
+      )
       .then((request) => {
         setBookLists((prevItem) => prevItem.concat(request.data.items));
         //setPreviewList(request.data.items.slice(0, 3));

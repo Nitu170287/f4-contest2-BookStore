@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #242121;
+    font-family: 'Roboto', sans-serif;
+}
+
+.gallery {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+
+}
+
+.gallery img {
+    width: 210px;
+    height: 250px;
+    padding: 0px 20px 20px 37px;
+}
+
+/* navbar */
+.navbar {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    background-color: #292828;
+    position: relative;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+
+
+}
+
+.logo img {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+
+}
+
+.icons {
+    float: right;
+    display: flex;
+    gap: 35px;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    margin: auto 0;
+}
+
+.icons li {
+    margin: 0 2px;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+
+.SearchBox {
+    margin: auto 0;
+    display: flex;
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+}
+
+.SearchBox input {
+    width: 550px;
+    background-color: #373737;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+
+.SearchBox img {
+    margin-left: 20px;
+    padding: 5px;
+    background-color: #373737;
+    border-radius: 5px 0px 0 5px;
+}
+
+.SearchBox button {
+    background-color: #292828;
+    color: #FFFFFF;
+    margin-left: 10px;
+    border: 1px solid #FFFFFF;
+    width: 95px;
+
+}
+
+.Books h2 {
+    color: white;
+    margin-left: 7%;
+}
+
+/* Book Banner */
+
+.bookwrapper {
+    display: flex;
+    justify-items: flex-start;
+
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.bookwrapper-streatch {
+    margin-top: 70px;
+    display: flex;
+}
+
+.bookwrapper .bookImg {
+
+    position: relative;
+    left: 40px;
+    top: -5px;
+    transform: rotate(-5deg);
+    z-index: 999;
+}
+
+.bookwrapper-streatch .bookImg-streatch {
+
+    position: relative;
+    left: 40px;
+    top: -18px;
+    transform: rotate(-5deg);
+    z-index: 999;
+}
+
+.bookwrapper .bookImg img {
+    height: 200px;
+    width: 150px;
+
+}
+
+.bookwrapper-streatch .bookImg-streatch img {
+    height: 300px;
+    width: 250px;
+}
+
+
+
+.book-info {
+    color: #FFFFFF;
+    background-color: #415f71;
+    padding: 10px 10px 22px 100px;
+    max-height: 22vh;
+    min-width: 35%;
+    max-width: 35%;
+    min-height: 22vh;
+    position: relative;
+    left: -3vw;
+}
+
+.book-info button {
+    padding: 5px;
+    width: 60%;
+
+    margin: 10px;
+
+}
+
+.book-info p {
+    font-size: 10px;
+}
+
+.book-info-streach {
+    color: #FFFFFF;
+    background-color: #415f71;
+    padding: 10px 50px 50px 150px;
+    max-height: 22vh;
+    width: 100%;
+    min-height: 28vh;
+    position: relative;
+    left: -3vw;
+}
+
+.book-info-streach .btn-link a {
+    text-decoration: none;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    padding: 10px;
+    margin: 20px;
+    width: 10%;
+    float: right;
+    position: relative;
+    bottom: 50px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.description {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.bookwrapper-parent {
+    display: flex;
+
+    justify-content: flex-start;
+    margin-top: 5vh;
+}
+
+.book-rating-lang-pub {
+    display: flex;
+    justify-items: flex-start;
+    gap: 10px;
+}

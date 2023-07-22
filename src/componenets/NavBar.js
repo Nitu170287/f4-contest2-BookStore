@@ -40,12 +40,24 @@ const NavBar = (props) => {
       <div className="navbar">
         <div className="logo">
           {/*  */}
-          <img src={logoImage} style={{ width: "64px", height: "95px" }} />
-          <img src={logoText} style={{ width: "160px", height: "45px" }} />
+          <img
+            src={logoImage}
+            style={{ width: "64px", height: "95px" }}
+            alt=""
+          />
+          <img
+            src={logoText}
+            style={{ width: "160px", height: "45px" }}
+            alt=""
+          />
         </div>
 
         <div className="SearchBox">
-          <img src={searchIcon} style={{ width: "25px", height: "25px" }} />
+          <img
+            src={searchIcon}
+            style={{ width: "25px", height: "25px" }}
+            alt=""
+          />
           <input
             type="text"
             placeholder=" Search for the book you want and read it now...Sherlock Holmes and Harry Pot.."
@@ -58,22 +70,22 @@ const NavBar = (props) => {
         <ul className="icons">
           <li>
             <a href="#">
-              <img src={heartIcon} />
+              <img src={heartIcon} alt="" />
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src={bellIcon} />
+            <a href="/#">
+              <img src={bellIcon} alt="" />
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src={diamondIcon} />
+            <a href="/#">
+              <img src={diamondIcon} alt="" />
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src={imageIcon} />
+            <a href="/#">
+              <img src={imageIcon} alt="" />
             </a>
           </li>
         </ul>

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import bookimage from "../images/bookimage.svg";
 
 const BookBanner = (props) => {
   const [previewIndex, setPreviewIndex] = useState(-1);
 
-  if (previewIndex == -1) {
+  if (previewIndex === -1) {
     return (
       <div className="bookwrapper-parent ">
         {props.previewlist && props.previewlist.length > 0
@@ -14,6 +13,7 @@ const BookBanner = (props) => {
                   <div className="bookImg">
                     <img
                       src={preview.volumeInfo.imageLinks.smallThumbnail}
+                      alt=""
                     ></img>
                   </div>
 
@@ -22,7 +22,7 @@ const BookBanner = (props) => {
                     <p>
                       {preview && preview.volumeInfo.description
                         ? "Description :" +
-                        preview.volumeInfo.description.substring(0, 100) +
+                          preview.volumeInfo.description.substring(0, 100) +
                           "..."
                         : null}
                     </p>
@@ -45,6 +45,7 @@ const BookBanner = (props) => {
               props.previewlist[previewIndex].volumeInfo.imageLinks
                 .smallThumbnail
             }
+            alt=""
           ></img>
         </div>
 
@@ -92,12 +93,14 @@ const BookBanner = (props) => {
             <a
               href={props.previewlist[previewIndex].volumeInfo.previewLink}
               target="_blank"
+              rel="noreferrer"
             >
               Read Now
             </a>
             <a
               href={props.previewlist[previewIndex].volumeInfo.infoLink}
               target="_blank"
+              rel="noreferrer"
             >
               More Info!
             </a>

@@ -21,6 +21,7 @@ const App = () => {
       })
       .catch((err) => {
         console.log(err);
+        alert(err);
       });
 
     axios
@@ -34,6 +35,7 @@ const App = () => {
       })
       .catch((err) => {
         console.log(err);
+        alert(err);
       });
   }, []);
 

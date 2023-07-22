@@ -25,13 +25,13 @@ const App = () => {
       .get("https://www.googleapis.com/books/v1/volumes?q=Sherlock+Holmes")
       .then((request) => {
         setBookLists((prevItem) => prevItem.concat(request.data.items));
-        setPreviewList(request.data.items.slice(0, 3));
+        //setPreviewList(request.data.items.slice(0, 3));
         console.log(previewlist);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, [[], []]);
+  }, [bookLists, previewlist]);
 
   return (
     <div>

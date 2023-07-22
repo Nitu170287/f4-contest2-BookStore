@@ -69,7 +69,7 @@ const NavBar = (props) => {
 
         <ul className="icons">
           <li>
-            <a href="#">
+            <a href="/#">
               <img src={heartIcon} alt="" />
             </a>
           </li>

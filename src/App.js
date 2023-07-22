@@ -12,7 +12,7 @@ const App = () => {
   useEffect(() => {
     axios
       .get(
-        "https://www.googleapis.com/books/v1/volumes?q=harry+potter&key=AIzaSyBQ5Mz54R1f0fXo5Di_gR4AFxRAXu1m4hY"
+        "https://www.googleapis.com/books/v1/volumes?q=harry+potter&key=AIzaSyBLKk4qpY1tMkGM7IXSuszRvqf5BnFJ6dY"
       )
       .then((request) => {
         updateLists(request.data.items);
@@ -26,7 +26,7 @@ const App = () => {
 
     axios
       .get(
-        "https://www.googleapis.com/books/v1/volumes?q=Sherlock+Holmes&key=AIzaSyBQ5Mz54R1f0fXo5Di_gR4AFxRAXu1m4hY"
+        "https://www.googleapis.com/books/v1/volumes?q=Sherlock+Holmes&key=AIzaSyBLKk4qpY1tMkGM7IXSuszRvqf5BnFJ6dY"
       )
       .then((request) => {
         updateLists(request.data.items);

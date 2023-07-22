@@ -16,14 +16,14 @@ const NavBar = (props) => {
       `https://www.googleapis.com/books/v1/volumes?q=${search.replaceAll(
         " ",
         "+"
-      )}&key=AIzaSyBQ5Mz54R1f0fXo5Di_gR4AFxRAXu1m4hY`
+      )}&key=AIzaSyBLKk4qpY1tMkGM7IXSuszRvqf5BnFJ6dY`
     );
     axios
       .get(
         `https://www.googleapis.com/books/v1/volumes?q=${search.replaceAll(
           " ",
           "+"
-        )}&key=AIzaSyBQ5Mz54R1f0fXo5Di_gR4AFxRAXu1m4hY`
+        )}&key=AIzaSyBLKk4qpY1tMkGM7IXSuszRvqf5BnFJ6dY`
       )
       .then((request) => {
         props.setBookLists(request.data.items);

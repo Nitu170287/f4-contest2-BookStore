@@ -162,15 +162,15 @@ body {
 
 
 .book-info {
-    color: #FFFFFF;
     background-color: #415f71;
-    padding: 10px 10px 22px 100px;
-    max-height: 22vh;
-    min-width: 35%;
-    max-width: 35%;
-    min-height: 22vh;
-    position: relative;
+    color: #fff;
     left: -3vw;
+    max-height: 22vh;
+    max-width: 25vw;
+    min-height: 22vh;
+    min-width: 15vw;
+    padding: 10px 10px 22px 100px;
+    position: relative;
 }
 
 .book-info button {

@@ -15,9 +15,9 @@ const App = () => {
         "https://www.googleapis.com/books/v1/volumes?q=harry+potter&key=AIzaSyBQ5Mz54R1f0fXo5Di_gR4AFxRAXu1m4hY"
       )
       .then((request) => {
-        setBookLists((prevItem) => prevItem.concat(request.data.items));
-        setPreviewList(request.data.items.slice(0, 3));
-        console.log(previewlist);
+        updateLists(request.data.items);
+        //setPreviewList(request.data.items.slice(0, 3));
+        //console.log(previewlist);
       })
       .catch((err) => {
         console.log(err);
@@ -28,14 +28,19 @@ const App = () => {
         "https://www.googleapis.com/books/v1/volumes?q=Sherlock+Holmes&key=AIzaSyBQ5Mz54R1f0fXo5Di_gR4AFxRAXu1m4hY"
       )
       .then((request) => {
-        setBookLists((prevItem) => prevItem.concat(request.data.items));
+        updateLists(request.data.items);
         //setPreviewList(request.data.items.slice(0, 3));
-        console.log(previewlist);
+        //console.log(previewlist);
       })
       .catch((err) => {
         console.log(err);
       });
-  }, [bookLists, previewlist]);
+  }, []);
+
+  function updateLists(list) {
+    setBookLists((prevItem) => prevItem.concat(list));
+    setPreviewList(list.slice(0, 3));
+  }
 
   return (
     <div>

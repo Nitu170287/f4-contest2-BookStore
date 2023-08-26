@@ -66,7 +66,7 @@ const BookBanner = (props) => {
                 ? "Description :" +
                   props.previewlist[
                     previewIndex
-                  ].volumeInfo.description.substring(0, 450) +
+                  ].volumeInfo.description.substring(0, 300) +
                   "..."
                 : null}
             </p>
